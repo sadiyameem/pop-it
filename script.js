@@ -1,4 +1,6 @@
-const sound = new Audio();
+const sound = new Audio(
+    "pop.wav"
+);
 
 popit.onclick = function (event) {
     const target = event.target;
@@ -10,7 +12,7 @@ popit.onclick = function (event) {
     sound.currentTime = 0;
     sound.play();
     if("vibrate" in navigator) {
-        this.navigator.vibrate(100);
+        navigator.vibrate(100);
     }
     target.classList.toggle("pressed");
 };
