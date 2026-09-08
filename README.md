@@ -8,13 +8,13 @@
 - Background changing button
 - Pop counter
 
-- Tools
+# Tools
 - HTML
 - CSS
 - JavaScript
 - https://mixkit.co/
 
-- Challenge/Learned
+# Challenge/Learned
 - A challenge was getting the right sound since I was unable to get sounds from the site I normally use.
 - I learned how to add a counter and shadow to the pop-it.
 
