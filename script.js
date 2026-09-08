@@ -1,6 +1,7 @@
-const sound = new Audio(
-    "pop.wav"
-);
+const sound = new Audio("pop.wav");
+
+let popCount = 0;
+const counter = document.querySelector("h1");
 
 popit.onclick = function (event) {
     const target = event.target;
@@ -31,6 +32,3 @@ let changeColor = () => {
 };
 
 btn.addEventListener("click",changeColor);
-
-let popCount = 0;
-const counter = document.querySelector("h1");
