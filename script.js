@@ -8,6 +8,9 @@ popit.onclick = function (event) {
         return;
     }
 
+    popCount++;
+    counter.textContent = `Pop Counter: ${popCount}`;
+
     sound.pause();
     sound.currentTime = 0;
     sound.play();
@@ -28,3 +31,6 @@ let changeColor = () => {
 };
 
 btn.addEventListener("click",changeColor);
+
+let popCount = 0;
+const counter = document.querySelector("h1");
