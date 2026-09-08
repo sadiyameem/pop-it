@@ -1,16 +1,10 @@
 const sound = new Audio("pop.wav");
 
-let popCount = 0;
-const counter = document.querySelector("h1");
-
 popit.onclick = function (event) {
     const target = event.target;
     if (!target.matches(".circle")) {
         return;
     }
-
-    popCount++;
-    counter.textContent = `Pop Counter: ${popCount}`;
 
     sound.pause();
     sound.currentTime = 0;
